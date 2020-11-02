@@ -5,13 +5,22 @@
 
 #include "Structs/page.h"
 #include "Structs/read_model.h"
+#include "Structs/write_model.h"
+
+#include "Algorithms/algorithms.h"
 
 #include "utils.h"
 #include "reader.h"
 #include "writer.h"
 
 int main(int argc, const char * argv[]) {
-//    ReadModel data = read_file();
+    char file_path[128];
+    
+    printf("Digite o caminho do diretório do arquivo de entrada: \n");
+    scanf("%s", file_path);
+    
+    ReadModel data = read_file(file_path);
+    printf("%i\n", data.memory_length);
     
     Page pages[6][6] = {
         {
@@ -49,7 +58,16 @@ int main(int argc, const char * argv[]) {
         },
     };
     
-    write_file(6, 6, pages, 6, 5, 6, 0.83);
+    WriteModel wm = {
+        .rowCount = 6,
+        .colCount = 6,
+        .hits = 6,
+        .misses = 5,
+        .total_requests = 6,
+        .error_rate = 0.83,
+    };
+    
+    write_file(wm, pages);
     
     return 0;
 }

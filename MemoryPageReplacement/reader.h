@@ -1,4 +1,4 @@
-ReadModel read_file() {
+ReadModel read_file(char file_path[]) {
     ReadModel file_data = {
         .error = true,
         .memory_length = 0,
@@ -6,7 +6,9 @@ ReadModel read_file() {
     };
 
     FILE* file;
-    char* file_name = "/Users/Lucas/dev/MemoryPageReplacement/MemoryPageReplacement/input.txt";
+    char file_name[128];
+    strcpy(file_name, file_path);
+    strcat(file_name, "/entrada.txt");
 
     file = fopen(file_name, "r");
     if (file == NULL) {
