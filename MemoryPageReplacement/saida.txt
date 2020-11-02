@@ -1,0 +1,15 @@
+EVOLUÇÃO
+2 2 2 2 _ 2 
+  3 3 3 _ 3 
+    4 4 _ 4 
+      6 _ 6 
+        _ 7 
+
+ACERTOS
+6
+ERROS
+5
+TOTAL REQUISICOES
+6
+TAXA DE ERRO
+0.83
