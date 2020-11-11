@@ -21,7 +21,7 @@ ReadModel read_file(char file_path[]) {
     char pages_string[MAX_LINE_SIZE];
     char memory_length_string[MAX_LINE_SIZE];
     
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 3; i++) {
         fgets(current_line, MAX_LINE_SIZE, file);
         
         switch (i) {

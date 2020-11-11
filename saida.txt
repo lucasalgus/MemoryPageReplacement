@@ -3,13 +3,13 @@ EVOLUÇÃO
   3 3 3 _ 3 
     4 4 _ 4 
       6 _ 6 
-          7 
+        _ 7 
 
 ACERTOS
-1
+6
 ERROS
 5
-TOTAL REQUISIÇÕES
+TOTAL REQUISICOES
 6
 TAXA DE ERRO
-0.17
+0.83

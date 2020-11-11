@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		A00ADDF325507AE000831698 /* saida.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = saida.txt; sourceTree = "<group>"; };
+		A029F759255B811A0096FF79 /* fifo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
 		A09C61C92550C3180024B862 /* algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algorithms.h; sourceTree = "<group>"; };
 		A09C61CB2550C5020024B862 /* write_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = write_model.h; sourceTree = "<group>"; };
 		A0D99320254F7BBB00997702 /* MemoryPageReplacement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MemoryPageReplacement; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,9 +51,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A081AD602558D7490019334E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0D9932D254F7CAC00997702 /* reader.h */,
+				A0D99343254FA8B000997702 /* writer.h */,
+				A0D99344254FA8C600997702 /* utils.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A09C61C82550C3020024B862 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				A029F759255B811A0096FF79 /* fifo.h */,
 				A09C61C92550C3180024B862 /* algorithms.h */,
 			);
 			path = Algorithms;
@@ -77,11 +89,9 @@
 		A0D99322254F7BBB00997702 /* MemoryPageReplacement */ = {
 			isa = PBXGroup;
 			children = (
+				A081AD602558D7490019334E /* Utils */,
 				A09C61C82550C3020024B862 /* Algorithms */,
 				A0D99330254F7E6800997702 /* Structs */,
-				A0D9932D254F7CAC00997702 /* reader.h */,
-				A0D99343254FA8B000997702 /* writer.h */,
-				A0D99344254FA8C600997702 /* utils.h */,
 				A0D99323254F7BBB00997702 /* main.c */,
 				A0D9932B254F7C0B00997702 /* entrada.txt */,
 				A00ADDF325507AE000831698 /* saida.txt */,
