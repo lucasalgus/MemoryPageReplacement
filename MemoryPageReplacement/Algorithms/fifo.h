@@ -1,8 +1,8 @@
-void fifo(Page* state, Page page, int memory_size) {
+void fifo(Page* state, Page page, int memory_length) {
     int lowest_arrival_position = 100;
     int lowest_arrival_position_index = 0;
     
-    for (int i = 0; i < memory_size; i++) {
+    for (int i = 0; i < memory_length; i++) {
         Page current_page = state[i];
         if (current_page.arrival_position < lowest_arrival_position) {
             lowest_arrival_position = current_page.arrival_position;

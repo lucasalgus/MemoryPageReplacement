@@ -15,26 +15,25 @@
 #include "Algorithms/algorithms.h"
 
 int main(int argc, const char * argv[]) {
-    char file_path[128] = "/Users/Lucas/dev/MemoryPageReplacement/MemoryPageReplacement";
+    char file_path[128];
     int menu = 0;
     
-//    printf("Digite o caminho do diretório do arquivo de entrada: \n");
-//    scanf("%s", file_path);
+    printf("Digite o caminho do diretório do arquivo de entrada: \n");
+    printf("> ");
+    scanf("%s", file_path);
+    
+    printf("Selecione uma das opções de algoritmos:");
+    printf("\n    1. FIFO");
+    printf("\n    2. OPT\n");
+    printf("> ");
+    scanf("%i", &menu);
 
     ReadModel data = read_file(file_path);
-    
     WriteModel wm = algorithm(data, menu);
-
-//    WriteModel wm = {
-//        .rowCount = 6,
-//        .colCount = 6,
-//        .hits = 6,
-//        .misses = 5,
-//        .total_requests = 6,
-//        .error_rate = 0.83,
-//    };
     
     write_file(wm, file_path);
+    
+    printf("\nArquivo saida.txt escrito no caminho: %s\n", file_path);
     
     return 0;
 }
