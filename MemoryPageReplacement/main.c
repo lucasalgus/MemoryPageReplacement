@@ -12,6 +12,7 @@
 #include "Utils/writer.h"
 
 #include "Algorithms/fifo.h"
+#include "Algorithms/opt.h"
 #include "Algorithms/algorithms.h"
 
 int main(int argc, const char * argv[]) {

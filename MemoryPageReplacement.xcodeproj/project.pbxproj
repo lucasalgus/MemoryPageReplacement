@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		A00ADDF325507AE000831698 /* saida.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = saida.txt; sourceTree = "<group>"; };
+		A0292956255E343A0069F423 /* opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
 		A029F759255B811A0096FF79 /* fifo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
 		A09C61C92550C3180024B862 /* algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algorithms.h; sourceTree = "<group>"; };
 		A09C61CB2550C5020024B862 /* write_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = write_model.h; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A029F759255B811A0096FF79 /* fifo.h */,
+				A0292956255E343A0069F423 /* opt.h */,
 				A09C61C92550C3180024B862 /* algorithms.h */,
 			);
 			path = Algorithms;
